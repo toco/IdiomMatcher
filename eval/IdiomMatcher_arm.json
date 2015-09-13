@@ -1,0 +1,673 @@
+{
+    "patterns": [
+        {
+            "architecture": "ELF for ARM (Executable); CPU-ID: 13",
+            "instructions": [
+                {
+                    "ea": 13624,
+                    "mnem": "CMP",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R3"
+                            ],
+                            "text": "R3"
+                        },
+                        {
+                            "text": "#9"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 13628
+                        }
+                    ]
+                },
+                {
+                    "ea": 13628,
+                    "isRegex": true,
+                    "mnem": "(LDR$|LDRLS)",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "regs": [
+                                "PC"
+                            ],
+                            "text": "PC",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "PC",
+                                "R3"
+                            ],
+                            "text": "[PC,R3,LSL#2]"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 13632
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 13676
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 13920
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 14008
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 14036
+                        }
+                    ]
+                }
+            ],
+            "name": "redboot_aim711.elf#1"
+        },
+        {
+            "architecture": "ELF for ARM (Executable); CPU-ID: 13",
+            "instructions": [
+                {
+                    "ea": 106402,
+                    "mnem": "CMP",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R0"
+                            ],
+                            "text": "R0"
+                        },
+                        {
+                            "text": "#0x55"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 106404
+                        }
+                    ]
+                },
+                {
+                    "ea": 106404,
+                    "mnem": "B",
+                    "ops": [
+                        {
+                            "address": 106408,
+                            "text": "loc_19FA8"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 106406
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 106408
+                        }
+                    ]
+                },
+                {
+                    "ea": 106406,
+                    "mnem": "B",
+                    "ops": [
+                        {
+                            "address": 107786,
+                            "text": "def_19FAE"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 107786
+                        }
+                    ]
+                },
+                {
+                    "ea": 106408,
+                    "mnem": "ADR",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R1"
+                            ],
+                            "text": "R1",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_19FAE"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 106410
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 106416
+                        }
+                    ]
+                },
+                {
+                    "ea": 106410,
+                    "mnem": "LSL",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R0"
+                            ],
+                            "text": "R0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R0"
+                            ],
+                            "text": "R0"
+                        },
+                        {
+                            "text": "#1"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 106412
+                        }
+                    ]
+                },
+                {
+                    "ea": 106412,
+                    "mnem": "LDR",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R1"
+                            ],
+                            "text": "R1",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R1",
+                                "R0"
+                            ],
+                            "text": "[R1,R0]"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 106414
+                        }
+                    ]
+                },
+                {
+                    "ea": 106414,
+                    "mnem": "ADD",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "regs": [
+                                "PC"
+                            ],
+                            "text": "PC",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R1"
+                            ],
+                            "text": "R1"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 106588
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 106600
+                        }
+                    ]
+                }
+            ],
+            "name": "n2_IAR_dbg_O1.elf#1"
+        },
+        {
+            "architecture": "ELF for ARM (Executable); CPU-ID: 13",
+            "instructions": [
+                {
+                    "ea": 4120,
+                    "mnem": "CMP",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R0"
+                            ],
+                            "text": "R0"
+                        },
+                        {
+                            "text": "#8"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 4124
+                        }
+                    ]
+                },
+                {
+                    "ea": 4124,
+                    "mnem": "ADD",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "regs": [
+                                "PC"
+                            ],
+                            "text": "PC",
+                            "used": false
+                        },
+                        {
+                            "regs": [
+                                "PC"
+                            ],
+                            "text": "PC"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R0"
+                            ],
+                            "text": "R0,LSL#2"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 4128
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 4132
+                        }
+                    ]
+                }
+            ],
+            "name": "n2_Kail_ndbg_O1.elf#1"
+        },
+        {
+            "architecture": "ELF for ARM (Executable); CPU-ID: 13",
+            "instructions": [
+                {
+                    "ea": 37710,
+                    "mnem": "CMP",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "A"
+                            ],
+                            "text": "A"
+                        },
+                        {
+                            "text": "#7"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 37712
+                        }
+                    ]
+                },
+                {
+                    "ea": 37712,
+                    "mnem": "B",
+                    "ops": [
+                        {
+                            "address": 37880,
+                            "text": "def_9358"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 37714
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37880
+                        }
+                    ]
+                },
+                {
+                    "ea": 37714,
+                    "mnem": "ADR",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "B"
+                            ],
+                            "text": "B",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_9358"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 37716
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 37724
+                        }
+                    ]
+                },
+                {
+                    "ea": 37716,
+                    "mnem": "LDR",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "B"
+                            ],
+                            "text": "B",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "B",
+                                "A"
+                            ],
+                            "text": "[B,A]"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 37718
+                        }
+                    ]
+                },
+                {
+                    "ea": 37718,
+                    "mnem": "LSL",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "B"
+                            ],
+                            "text": "B",
+                            "used": false
+                        },
+                        {
+                            "regs": [
+                                "B"
+                            ],
+                            "nameIsTemplate": true,
+                            "text": "B"
+                        },
+                        {
+                            "text": "#1"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 37720
+                        }
+                    ]
+                },
+                {
+                    "ea": 37720,
+                    "mnem": "ADD",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "regs": [
+                                "PC"
+                            ],
+                            "text": "PC",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "B"
+                            ],
+                            "text": "B"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37690
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37732
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37742
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37754
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37766
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37776
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37786
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 37806
+                        }
+                    ]
+                }
+            ],
+            "name": "n2_IAR_ndgb_O2.elf#1"
+        },
+        {
+            "architecture": "ELF for ARM (Executable); CPU-ID: 13",
+            "instructions": [
+                {
+                    "ea": 85428,
+                    "mnem": "CMP",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R1"
+                            ],
+                            "text": "R1"
+                        },
+                        {
+                            "text": "#5"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 85430
+                        }
+                    ]
+                },
+                {
+                    "ea": 85430,
+                    "mnem": "B",
+                    "ops": [
+                        {
+                            "address": 85384,
+                            "text": "def_14DBC"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 85432
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 85384
+                        }
+                    ]
+                },
+                {
+                    "ea": 85432,
+                    "mnem": "ADR",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R2"
+                            ],
+                            "text": "R2",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_14DBC"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 85434
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 85440
+                        }
+                    ]
+                },
+                {
+                    "ea": 85434,
+                    "mnem": "LDR",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R2"
+                            ],
+                            "text": "R2",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R2",
+                                "R1"
+                            ],
+                            "text": "[R2,R1]"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 85436
+                        }
+                    ]
+                },
+                {
+                    "ea": 85436,
+                    "mnem": "ADD",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "regs": [
+                                "PC"
+                            ],
+                            "text": "PC",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "R2"
+                            ],
+                            "text": "R2"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 85380
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 85446
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 85454
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 85482
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 85532
+                        }
+                    ]
+                }
+            ],
+            "name": "n2_IAR_ndgb_O2.elf#2"
+        }
+    ],
+    "version": 2
+}

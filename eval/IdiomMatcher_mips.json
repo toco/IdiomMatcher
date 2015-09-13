@@ -1,0 +1,189 @@
+{
+    "patterns": [
+        {
+            "architecture": "ELF for MIPS (Executable); CPU-ID: 12",
+            "instructions": [
+                {
+                    "ea": 2680168904,
+                    "mnem": "sltiu",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v0xx"
+                            ],
+                            "text": "$v0xx",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v1xx"
+                            ],
+                            "text": "$v1xx"
+                        },
+                        {
+                            "text": "0xA"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 2680168908
+                        }
+                    ]
+                },
+                {
+                    "ea": 2680168908,
+                    "mnem": "beqz",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v0xx"
+                            ],
+                            "text": "$v0xx"
+                        },
+                        {
+                            "address": 2680169324,
+                            "text": "def_9FC021E8"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 2680168916
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 2680169324
+                        }
+                    ]
+                },
+                {
+                    "ea": 2680168916,
+                    "mnem": "la",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v0"
+                            ],
+                            "text": "$v0",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_9FC021E8"
+                        }
+                    ],
+                    "size": 8,
+                    "xrefs": [
+                        {
+                            "target": 2680168924
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 2680246632
+                        }
+                    ]
+                },
+                {
+                    "ea": 2680168924,
+                    "mnem": "addu",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v1"
+                            ],
+                            "text": "$v1",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v0"
+                            ],
+                            "text": "$v0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 2680168932
+                        }
+                    ]
+                },
+                {
+                    "ea": 2680168932,
+                    "mnem": "lw",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$a0"
+                            ],
+                            "text": "$a0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$v1"
+                            ],
+                            "text": "0($v1)"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 2680168936
+                        }
+                    ]
+                },
+                {
+                    "ea": 2680168936,
+                    "mnem": "jr",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "$a0"
+                            ],
+                            "text": "$a0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 2680168940
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 2680168944
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 2680169244
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 2680169324
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 2680169352
+                        }
+                    ]
+                }
+            ],
+            "name": "redboot_ocelot#1"
+        }
+    ],
+    "version": 2
+}

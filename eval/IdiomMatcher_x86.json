@@ -1,0 +1,642 @@
+{
+    "patterns": [
+        {
+            "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
+            "instructions": [
+                {
+                    "ea": 134666494,
+                    "mnem": "cmp",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esi"
+                            ],
+                            "text": "esi"
+                        },
+                        {
+                            "text": "5"
+                        }
+                    ],
+                    "size": 3,
+                    "xrefs": [
+                        {
+                            "target": 134666497
+                        }
+                    ]
+                },
+                {
+                    "ea": 134666497,
+                    "mnem": "ja",
+                    "ops": [
+                        {
+                            "address": 134667039,
+                            "text": "loc_806DB1F"
+                        }
+                    ],
+                    "size": 6,
+                    "xrefs": [
+                        {
+                            "target": 134666509
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 134667039
+                        }
+                    ]
+                },
+                {
+                    "ea": 134666509,
+                    "mnem": "jmp",
+                    "ops": [
+                        {
+                            "address": 136695984,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esi"
+                            ],
+                            "text": "ds:off_136695984[esi*4]"
+                        }
+                    ],
+                    "size": 7,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 134666986
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 134667039
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 136695984
+                        }
+                    ]
+                }
+            ],
+            "name": "switch"
+        },
+        {
+            "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
+            "instructions": [
+                {
+                    "ea": 136144960,
+                    "mnem": "cmp",
+                    "ops": [
+                        {
+                            "address": 100,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esp"
+                            ],
+                            "text": "[esp+5Ch+arg_4]"
+                        },
+                        {
+                            "text": "5"
+                        }
+                    ],
+                    "size": 5,
+                    "xrefs": [
+                        {
+                            "target": 136144965
+                        }
+                    ]
+                },
+                {
+                    "ea": 136144965,
+                    "mnem": "ja",
+                    "ops": [
+                        {
+                            "address": 136145128,
+                            "text": "loc_81D68E8"
+                        }
+                    ],
+                    "size": 6,
+                    "xrefs": [
+                        {
+                            "target": 136144971
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 136145128
+                        }
+                    ]
+                },
+                {
+                    "ea": 136144971,
+                    "mnem": "mov",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "eax",
+                            "used": false
+                        },
+                        {
+                            "address": 100,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esp"
+                            ],
+                            "text": "[esp+5Ch+arg_4]"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 136144975
+                        }
+                    ]
+                },
+                {
+                    "ea": 136144975,
+                    "mnem": "jmp",
+                    "ops": [
+                        {
+                            "address": 137095248,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "ds:off_137095248[eax*4]"
+                        }
+                    ],
+                    "size": 7,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 136144992
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 136145576
+                        },
+                        {
+                            "isData": true,
+                            "target": 137095248
+                        }
+                    ]
+                }
+            ],
+            "name": "switch with mov"
+        },
+        {
+            "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
+            "instructions": [
+                {
+                    "ea": 136144960,
+                    "mnem": "cmp",
+                    "ops": [
+                        {
+                            "address": 100,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esp"
+                            ],
+                            "text": "[esp+5Ch+arg_4]"
+                        },
+                        {
+                            "text": "5"
+                        }
+                    ],
+                    "size": 5,
+                    "xrefs": [
+                        {
+                            "target": 136144965
+                        }
+                    ]
+                },
+                {
+                    "ea": 136144965,
+                    "mnem": "ja",
+                    "ops": [
+                        {
+                            "address": 136145128,
+                            "text": "loc_81D68E8"
+                        }
+                    ],
+                    "size": 6,
+                    "xrefs": [
+                        {
+                            "target": 136144971
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 136145128
+                        }
+                    ]
+                },
+                {
+                    "ea": 136144971,
+                    "mnem": "movzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "eax",
+                            "used": false
+                        },
+                        {
+                            "address": 100,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esp"
+                            ],
+                            "text": "[esp+5Ch+arg_4]"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 136144975
+                        }
+                    ]
+                },
+                {
+                    "ea": 136144975,
+                    "mnem": "jmp",
+                    "ops": [
+                        {
+                            "address": 137095248,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "ds:off_137095248[eax*4]"
+                        }
+                    ],
+                    "size": 7,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 136144992
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 136145152
+                        },
+                        {
+                            "isData": true,
+                            "target": 137095248
+                        }
+                    ]
+                }
+            ],
+            "name": "switch with movzx"
+        },
+        {
+            "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
+            "instructions": [
+                {
+                    "ea": 135234378,
+                    "mnem": "movzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edx"
+                            ],
+                            "text": "edx",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "ax"
+                            ],
+                            "text": "ax"
+                        }
+                    ],
+                    "size": 3,
+                    "xrefs": [
+                        {
+                            "target": 135234381
+                        }
+                    ]
+                },
+                {
+                    "ea": 135234381,
+                    "mnem": "cmp",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "ax"
+                            ],
+                            "text": "ax"
+                        },
+                        {
+                            "text": "1Ah"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 135234385
+                        }
+                    ]
+                },
+                {
+                    "ea": 135234385,
+                    "mnem": "ja",
+                    "ops": [
+                        {
+                            "address": 135234381,
+                            "text": "loc_80F834D"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 135234387
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 135234381
+                        }
+                    ]
+                },
+                {
+                    "ea": 135234387,
+                    "mnem": "jmp",
+                    "ops": [
+                        {
+                            "address": 137237980,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edx"
+                            ],
+                            "text": "ds:off_82E15DC[edx*4]"
+                        }
+                    ],
+                    "size": 7,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 135234381
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 135234448
+                        },
+                        {
+                            "isData": true,
+                            "target": 137237980
+                        }
+                    ]
+                }
+            ],
+            "name": "switch mov before"
+        },
+        {
+            "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
+            "instructions": [
+                {
+                    "ea": 134952725,
+                    "mnem": "cmp",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "eax"
+                        },
+                        {
+                            "text": "7"
+                        }
+                    ],
+                    "size": 3,
+                    "xrefs": [
+                        {
+                            "target": 134952728
+                        }
+                    ]
+                },
+                {
+                    "ea": 134952728,
+                    "mnem": "ja",
+                    "ops": [
+                        {
+                            "address": 134951513,
+                            "text": "loc_80B3259"
+                        }
+                    ],
+                    "size": 6,
+                    "xrefs": [
+                        {
+                            "target": 134952734
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 134951513
+                        }
+                    ]
+                },
+                {
+                    "ea": 134952734,
+                    "mnem": "xchg",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "ax"
+                        },
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "ax"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 134952736
+                        }
+                    ]
+                },
+                {
+                    "ea": 134952736,
+                    "mnem": "jmp",
+                    "ops": [
+                        {
+                            "address": 137046324,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "eax"
+                            ],
+                            "text": "ds:off_82B2934[eax*4]"
+                        }
+                    ],
+                    "size": 7,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 134953618
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 134953646
+                        },
+                        {
+                            "isData": true,
+                            "target": 137046324
+                        }
+                    ]
+                }
+            ],
+            "name": "switch with xchg"
+        },
+        {
+            "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
+            "instructions": [
+                {
+                    "ea": 135109238,
+                    "mnem": "cmp",
+                    "ops": [
+                        {
+                            "address": 8,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edi"
+                            ],
+                            "text": "byte ptr [edi+8]"
+                        },
+                        {
+                            "text": "79h"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 135109242
+                        }
+                    ]
+                },
+                {
+                    "ea": 135109242,
+                    "mnem": "ja",
+                    "ops": [
+                        {
+                            "address": 135111347,
+                            "text": "loc_80DA2B3"
+                        }
+                    ],
+                    "size": 6,
+                    "xrefs": [
+                        {
+                            "target": 135109252
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 135111347
+                        }
+                    ]
+                },
+                {
+                    "ea": 135109252,
+                    "mnem": "mov",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "esi"
+                            ],
+                            "text": "esi",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edx"
+                            ],
+                            "text": "edx"
+                        }
+                    ],
+                    "size": 2,
+                    "xrefs": [
+                        {
+                            "target": 135109254
+                        }
+                    ]
+                },
+                {
+                    "ea": 135109254,
+                    "mnem": "movzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edx"
+                            ],
+                            "text": "edx",
+                            "used": false
+                        },
+                        {
+                            "address": 8,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edi"
+                            ],
+                            "text": "byte ptr [edi+8]"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 135109258
+                        }
+                    ]
+                },
+                {
+                    "ea": 135109258,
+                    "mnem": "jmp",
+                    "ops": [
+                        {
+                            "address": 137066256,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "edx"
+                            ],
+                            "text": "ds:off_82B7710[edx*4]"
+                        }
+                    ],
+                    "size": 7,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 135109392
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 135109402
+                        },
+                        {
+                            "isData": true,
+                            "target": 137066256
+                        }
+                    ]
+                }
+            ],
+            "name": "switch with mov and movzx"
+        }
+    ],
+    "version": 2
+}

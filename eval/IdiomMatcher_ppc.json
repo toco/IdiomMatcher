@@ -1,0 +1,1524 @@
+{
+    "patterns": [
+        {
+            "architecture": "ELF for PowerPC (Executable); CPU-ID: 15",
+            "instructions": [
+                {
+                    "ea": 141408,
+                    "mnem": "cmplwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "cr",
+                                "r0"
+                            ],
+                            "text": "cr0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        },
+                        {
+                            "text": "5"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141412
+                        }
+                    ]
+                },
+                {
+                    "ea": 141412,
+                    "mnem": "bgt",
+                    "ops": [
+                        {
+                            "text": "lt"
+                        },
+                        {
+                            "address": 141480,
+                            "text": "def_22888"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141416
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 141480
+                        }
+                    ]
+                },
+                {
+                    "ea": 141416,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_22888@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141420
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 237312
+                        }
+                    ]
+                },
+                {
+                    "ea": 141420,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "text": "jpt_22888@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141424
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 237312
+                        }
+                    ]
+                },
+                {
+                    "ea": 141424,
+                    "mnem": "slwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        },
+                        {
+                            "text": "2"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141428
+                        }
+                    ]
+                },
+                {
+                    "ea": 141428,
+                    "mnem": "lwzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141432
+                        }
+                    ]
+                },
+                {
+                    "ea": 141432,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_22888@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141436
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 237312
+                        }
+                    ]
+                },
+                {
+                    "ea": 141436,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        },
+                        {
+                            "text": "jpt_22888@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141440
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 237312
+                        }
+                    ]
+                },
+                {
+                    "ea": 141440,
+                    "mnem": "add",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141444
+                        }
+                    ]
+                },
+                {
+                    "ea": 141444,
+                    "mnem": "mtctr",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "text": "ctr",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 141448
+                        }
+                    ]
+                },
+                {
+                    "ea": 141448,
+                    "mnem": "b",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "ctr"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 141452
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 141464
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 141480
+                        }
+                    ]
+                }
+            ],
+            "name": "redboot_mbx860#1"
+        },
+        {
+            "architecture": "ELF for PowerPC (Executable); CPU-ID: 15",
+            "instructions": [
+                {
+                    "ea": 199468,
+                    "mnem": "cmplwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "cr",
+                                "r0"
+                            ],
+                            "text": "cr0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        },
+                        {
+                            "text": "0x39"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199472
+                        }
+                    ]
+                },
+                {
+                    "ea": 199472,
+                    "mnem": "bgt",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "lt"
+                        },
+                        {
+                            "address": 200204,
+                            "text": "def_30B4C"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199476
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 200204
+                        }
+                    ]
+                },
+                {
+                    "ea": 199476,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_30B4C@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199480
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 243520
+                        }
+                    ]
+                },
+                {
+                    "ea": 199480,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "text": "jpt_30B4C@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199484
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 243520
+                        }
+                    ]
+                },
+                {
+                    "ea": 199484,
+                    "mnem": "slwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        },
+                        {
+                            "text": "2"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199488
+                        }
+                    ]
+                },
+                {
+                    "ea": 199488,
+                    "mnem": "lwzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199492
+                        }
+                    ]
+                },
+                {
+                    "ea": 199492,
+                    "mnem": "add",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199496
+                        }
+                    ]
+                },
+                {
+                    "ea": 199496,
+                    "mnem": "mtctr",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "text": "ctr",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 199500
+                        }
+                    ]
+                },
+                {
+                    "ea": 199500,
+                    "mnem": "b",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "ctr"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199504
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199544
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199576
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199608
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199640
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199672
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199704
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 199736
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 200204
+                        }
+                    ]
+                }
+            ],
+            "name": "redboot_mbx860#2"
+        },
+        {
+            "architecture": "ELF for PowerPC (Executable); CPU-ID: 15",
+            "instructions": [
+                {
+                    "ea": 180640,
+                    "mnem": "cmplwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "cr",
+                                "r0"
+                            ],
+                            "text": "cr0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r31"
+                            ],
+                            "text": "r31"
+                        },
+                        {
+                            "text": "0x20"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180644
+                        }
+                    ]
+                },
+                {
+                    "ea": 180644,
+                    "mnem": "cmpwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "cr",
+                                "r4"
+                            ],
+                            "text": "cr4",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r19"
+                            ],
+                            "text": "r19"
+                        },
+                        {
+                            "text": "0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180648
+                        }
+                    ]
+                },
+                {
+                    "ea": 180648,
+                    "mnem": "mfcr",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r29"
+                            ],
+                            "text": "r29",
+                            "used": false
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180652
+                        }
+                    ]
+                },
+                {
+                    "ea": 180652,
+                    "mnem": "slwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r29"
+                            ],
+                            "text": "r29",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r29"
+                            ],
+                            "text": "r29"
+                        },
+                        {
+                            "text": "28"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180656
+                        }
+                    ]
+                },
+                {
+                    "ea": 180656,
+                    "mnem": "bgt",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "lt"
+                        },
+                        {
+                            "address": 180768,
+                            "text": "def_2C1D4"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180660
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 180768
+                        }
+                    ]
+                },
+                {
+                    "ea": 180660,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_2C1D4@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180664
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 241952
+                        }
+                    ]
+                },
+                {
+                    "ea": 180664,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "text": "jpt_2C1D4@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180668
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 241952
+                        }
+                    ]
+                },
+                {
+                    "ea": 180668,
+                    "mnem": "slwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r31"
+                            ],
+                            "text": "r31"
+                        },
+                        {
+                            "text": "2"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180672
+                        }
+                    ]
+                },
+                {
+                    "ea": 180672,
+                    "mnem": "lwzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180676
+                        }
+                    ]
+                },
+                {
+                    "ea": 180676,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_2C1D4@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180680
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 241952
+                        }
+                    ]
+                },
+                {
+                    "ea": 180680,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        },
+                        {
+                            "text": "jpt_2C1D4@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180684
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 241952
+                        }
+                    ]
+                },
+                {
+                    "ea": 180684,
+                    "mnem": "add",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180688
+                        }
+                    ]
+                },
+                {
+                    "ea": 180688,
+                    "mnem": "mtctr",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "text": "ctr",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 180692
+                        }
+                    ]
+                },
+                {
+                    "ea": 180692,
+                    "mnem": "b",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "ctr"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 180696
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 180712
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 180732
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 180744
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 180768
+                        }
+                    ]
+                }
+            ],
+            "name": "redboot_mbx860#3"
+        },
+        {
+            "architecture": "ELF for PowerPC (Executable); CPU-ID: 15",
+            "instructions": [
+                {
+                    "ea": 197772,
+                    "mnem": "cmplwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "cr",
+                                "r0"
+                            ],
+                            "text": "cr0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        },
+                        {
+                            "text": "0xB"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197776
+                        }
+                    ]
+                },
+                {
+                    "ea": 197776,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "text": ".LC2_5@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197780
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 242932
+                        }
+                    ]
+                },
+                {
+                    "ea": 197780,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r3"
+                            ],
+                            "text": "r3",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        },
+                        {
+                            "text": ".LC2_5@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197784
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 242932
+                        }
+                    ]
+                },
+                {
+                    "ea": 197784,
+                    "mnem": "bgt",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "lt"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "text": "lr"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197788
+                        }
+                    ]
+                },
+                {
+                    "ea": 197788,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_304BC@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197792
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 243216
+                        }
+                    ]
+                },
+                {
+                    "ea": 197792,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "text": "jpt_304BC@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197796
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 243216
+                        }
+                    ]
+                },
+                {
+                    "ea": 197796,
+                    "mnem": "slwi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        },
+                        {
+                            "text": "2"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197800
+                        }
+                    ]
+                },
+                {
+                    "ea": 197800,
+                    "mnem": "lwzx",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r11"
+                            ],
+                            "text": "r11"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r0"
+                            ],
+                            "text": "r0"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197804
+                        }
+                    ]
+                },
+                {
+                    "ea": 197804,
+                    "mnem": "lis",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "text": "jpt_304BC@ha"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197808
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 243216
+                        }
+                    ]
+                },
+                {
+                    "ea": 197808,
+                    "mnem": "addi",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        },
+                        {
+                            "text": "jpt_304BC@l"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197812
+                        },
+                        {
+                            "isData": true,
+                            "isUnordinaryFlow": true,
+                            "target": 243216
+                        }
+                    ]
+                },
+                {
+                    "ea": 197812,
+                    "mnem": "add",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r9"
+                            ],
+                            "text": "r9"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197816
+                        }
+                    ]
+                },
+                {
+                    "ea": 197816,
+                    "mnem": "mtctr",
+                    "ops": [
+                        {
+                            "modified": true,
+                            "nameIsTemplate": true,
+                            "text": "ctr",
+                            "used": false
+                        },
+                        {
+                            "nameIsTemplate": true,
+                            "regs": [
+                                "r10"
+                            ],
+                            "text": "r10"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "target": 197820
+                        }
+                    ]
+                },
+                {
+                    "ea": 197820,
+                    "mnem": "b",
+                    "ops": [
+                        {
+                            "nameIsTemplate": true,
+                            "text": "ctr"
+                        }
+                    ],
+                    "size": 4,
+                    "xrefs": [
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197824
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197836
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197848
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197860
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197872
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197884
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197896
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197908
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197920
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197932
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197944
+                        },
+                        {
+                            "isUnordinaryFlow": true,
+                            "target": 197956
+                        }
+                    ]
+                }
+            ],
+            "name": "redboot_mbx860#4"
+        }
+    ],
+    "version": 2
+}
