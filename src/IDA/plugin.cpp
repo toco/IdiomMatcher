@@ -102,6 +102,8 @@ int IDAP_init(void)
 																	  "Save Patterns to file for IdiomMatcher",
 																		 "ALT-CTRL-S"
 	));
+
+#ifdef DEBUG
 	actionHandler.push_back(new SwitchStringSearch(&PLUGIN));
 
 	actionHandler.push_back(new AddMissingSwitchPatterns(&PLUGIN,&allPatterns));
@@ -113,7 +115,7 @@ int IDAP_init(void)
 																		"Dump disassembly as JSON file",
 																		"ALT-CTRL-D"
 	));
-
+#endif
 
 	// add custom IDC function dumpJSON()
 	set_idc_func_ex(idc_func_dump_name, idc_func_dump, idc_func_dump_args,0);
@@ -239,6 +241,7 @@ void IDAP_run(int arg)
 	double realtime = diff.count();
 	IdiomMatcher::msg("Matching finished in %f s CPU time, %f s real time.\n",cpuTime,realtime);
 
+#ifdef DEBUG
 	// save matches to file
 	IdiomMatcher::MatchPersistence persistence(idaAPI.executableName(),matcher->getName(),idaAPI.executableArchitecture(),realtime,cpuTime,matches);
 	auto path = persistence.matchPathForExecutablePath(idaAPI.executablePath());
@@ -246,6 +249,7 @@ void IDAP_run(int arg)
 		IdiomMatcher::msg("Saved matches to %s\n",path.c_str());
 	else
 		IdiomMatcher::msg("Failed to save matches to %s\n",path.c_str());
+#endif
 
 	delete matcher;
 }
