@@ -165,17 +165,19 @@ void IDAP_run(int arg)
 	// callback handler called when a matcher found a match
 	IdiomMatcher::Matching::FoundMatchFunctionCallback callback =  [&matches] (const IdiomMatcher::Pattern &pattern, const IdiomMatcher::EA &startEA, const IdiomMatcher::EA &endEA, const std::map<std::string,std::string>& extractedValues) -> bool {
 
+		auto match = std::make_shared<IdiomMatcher::Match>(startEA,endEA,pattern.getName());
+		matches.push_back(match);
+
+#ifdef DEBUG
 		char comment[MAXSTR];
 		memset(comment,0,sizeof(comment));
 		get_extra_cmt(endEA.getValue(), 0, comment, sizeof(comment));
 		msg("matched pattern %s for from: %jX to: %jX cmt: %s\n",pattern.getName().c_str(), startEA.getValue(),endEA.getValue(),comment);
 
-		auto match = std::make_shared<IdiomMatcher::Match>(startEA,endEA,pattern.getName());
-		matches.push_back(match);
-
 		for (auto &value : extractedValues) {
 			msg("extracted %s : %s\n",value.first.c_str(), value.second.c_str());
 		}
+#endif
 
 		for (auto action : pattern.getActions()) {
 			auto script = action->getScript();
@@ -186,6 +188,17 @@ void IDAP_run(int arg)
 				arguments[1] = idc_value_t(startEA.getValue());
 				arguments[2] = idc_value_t(endEA.getValue());
 				char error[MAXSTR];
+
+				for (auto &&value : extractedValues) {
+					auto currentPos = 0;
+					auto length = value.first.length();
+					auto foundPos = script.find(value.first,currentPos);
+					for (;foundPos != std::string::npos; foundPos = script.find(value.first,currentPos)) {
+						currentPos = foundPos;
+						script.replace(currentPos, length, value.second);
+					}
+				}
+
 				auto actionStr = script.c_str();
 				if (!ExecuteLine(actionStr, "matchedPatternAtEA\0", NULL, argc, arguments, NULL, error,
 								 sizeof(error))) {

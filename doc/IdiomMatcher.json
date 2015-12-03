@@ -40,7 +40,7 @@
                         "regs" : [ /* optional register names used in this operand */
                                     "r0" 
                                 ]
-                        "extractAs" : "movOperandA",     /* if set the operands value will be extracted during match and
+                        "extractAs" : "$movOperandA",     /* if set the operands value will be extracted during match and
                                                     stored with the extractAs value */
                         "modified" : true,        /* the operand is modified by the instruction */
                         "used" : true            /* the operand is used by the instruction */
@@ -65,7 +65,7 @@
                     },
                     {
                         "regex" : "ea*", /* if not empty the regex will be used to match the disassembled operand */ 
-                        "extractAs" : "subParam"
+                        "extractAs" : "$subParam"
                     }
                 ]
             }
@@ -74,8 +74,11 @@
               {
               "script":"static matchedPatternAtEA(pattern,startEA,endEA) { 
                           Message(\"found pattern %s at from %a to %a\\n\",pattern,startEA,endEA);
+                          Message(\"mov operand A: $movOperandA \\n parameter of sub:$subParam\\n\");
                      }" /* script which is executed as an IDC script in case of IDA.
-                     Must include function 'static matchedPatternAtEA(pattern,ea)' which will be called */
+                     Must include function 'static matchedPatternAtEA(pattern,ea)' which will be called
+                     The names of extracted values are replaced by the value in the script source before
+                     executing the idc script. Choose names which don't collide with the rest of the script. */
                  }
              ],
           "anchorTop" : false /* anchor position of the pattern, default is false -> bottom anchor */ 

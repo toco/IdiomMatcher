@@ -8,14 +8,15 @@
                     "mnem": "cmp",
                     "ops": [
                         {
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esi"
                             ],
                             "text": "esi"
                         },
                         {
-                            "text": "5"
+                            "text": "5",
+                            "extractAs" : "$defaultcase"
                         }
                     ],
                     "size": 3,
@@ -51,11 +52,12 @@
                     "ops": [
                         {
                             "address": 136695984,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esi"
                             ],
-                            "text": "ds:off_136695984[esi*4]"
+                            "text": "ds:off_136695984[esi*4]",
+                            "extractAs" : "$jumptable"
                         }
                     ],
                     "size": 7,
@@ -76,7 +78,11 @@
                     ]
                 }
             ],
-            "name": "switch"
+            "name": "switch",
+            "actions" : [
+                {"script":"static matchedPatternAtEA(pattern,startEA,endEA) {\nMessage(\"found pattern %s at from %a to %a\\n\",pattern,startEA,endEA);\nMessage(\"number of cases: $defaultcase+1, jumptable: $jumptable\\n\");\n}"
+                 }
+            ]
         },
         {
             "architecture": "ELF for Intel 386 (Executable); CPU-ID: 0",
@@ -87,7 +93,7 @@
                     "ops": [
                         {
                             "address": 100,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esp"
                             ],
@@ -130,7 +136,7 @@
                     "ops": [
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -139,7 +145,7 @@
                         },
                         {
                             "address": 100,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esp"
                             ],
@@ -159,7 +165,7 @@
                     "ops": [
                         {
                             "address": 137095248,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -194,7 +200,7 @@
                     "ops": [
                         {
                             "address": 100,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esp"
                             ],
@@ -237,7 +243,7 @@
                     "ops": [
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -246,7 +252,7 @@
                         },
                         {
                             "address": 100,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esp"
                             ],
@@ -266,7 +272,7 @@
                     "ops": [
                         {
                             "address": 137095248,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -301,7 +307,7 @@
                     "ops": [
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edx"
                             ],
@@ -309,7 +315,7 @@
                             "used": false
                         },
                         {
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "ax"
                             ],
@@ -328,7 +334,7 @@
                     "mnem": "cmp",
                     "ops": [
                         {
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "ax"
                             ],
@@ -371,7 +377,7 @@
                     "ops": [
                         {
                             "address": 137237980,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edx"
                             ],
@@ -405,7 +411,7 @@
                     "mnem": "cmp",
                     "ops": [
                         {
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -448,7 +454,7 @@
                     "ops": [
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -456,7 +462,7 @@
                         },
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -476,7 +482,7 @@
                     "ops": [
                         {
                             "address": 137046324,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "eax"
                             ],
@@ -511,7 +517,7 @@
                     "ops": [
                         {
                             "address": 8,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edi"
                             ],
@@ -554,7 +560,7 @@
                     "ops": [
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "esi"
                             ],
@@ -562,7 +568,7 @@
                             "used": false
                         },
                         {
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edx"
                             ],
@@ -582,7 +588,7 @@
                     "ops": [
                         {
                             "modified": true,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edx"
                             ],
@@ -591,7 +597,7 @@
                         },
                         {
                             "address": 8,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edi"
                             ],
@@ -611,7 +617,7 @@
                     "ops": [
                         {
                             "address": 137066256,
-                            "nameIsTemplate": true,
+                            "nameIsPattern": true,
                             "regs": [
                                 "edx"
                             ],

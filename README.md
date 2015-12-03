@@ -25,13 +25,14 @@ Have a look into the patterns in the directory ```eval``` for examples of patter
 Normally you wouldn't manually write patterns, instead select some disassembly in IDA and create a pattern from there.
 Select disassembly and use the context menu or the menu "Edit/Other/Create Pattern from selection" 
 
+Patterns can be configure to extract values. The extracted values can be used in actions which will be exected once it was matched.
+
 For more information about the pattern specification have a look at the documented IdiomMathcher.json example in the ```doc``` directory.
 
 ##Plugin usage
 Load patterns form disk or create patterns 
 
 ##TODO
-- Actually use extracted values as parameter in match action.
 - Add GUI for pattern editing.
 
 ##License
